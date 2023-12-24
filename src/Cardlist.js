@@ -22,7 +22,7 @@ const CardList = () => {
       {bookmarks.map((bookmark, index) => (
         <li key={index}>
           <a href={bookmark.url} className="card">
-            <img src={bookmark.imageUrl} className="card__image" alt="" onerror="this.onerror=null; this.src='https://cdn.dribbble.com/userupload/6038198/file/original-827b370e4e255882d5f00013565a2cc6.png'" />
+            <img src={bookmark.imageUrl} className="card__image" alt="" onerror="this.src='error.png';" />
             <div className="card__overlay">
               <div className="card__header">
                 <svg className="card__arc" xmlns="http://www.w3.org/2000/svg">
