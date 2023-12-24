@@ -32,7 +32,7 @@ const CardList = () => {
                 <svg className="card__arc" xmlns="http://www.w3.org/2000/svg">
                   <path />
                 </svg>
-                <img className="card__thumb" src={bookmark.imageUrl} alt="" />
+                <img className="card__thumb" src={bookmark.imageUrl} alt="" onError={handleImageError} />
                 <div className="card__header-text">
                   <h3 className="card__title">{bookmark.title}</h3>
                   <span className="card__status">
