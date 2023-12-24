@@ -17,12 +17,16 @@ const CardList = () => {
     fetchData();
   }, []);
 
+  const handleImageError = (event) => {
+    event.target.src = '/error.png'; // Replace failed image with error.png
+  };
+
   return (
     <ul className="cards">
       {bookmarks.map((bookmark, index) => (
         <li key={index}>
           <a href={bookmark.url} className="card">
-            <img src={bookmark.imageUrl === "false" ? 'error.jpg' : bookmark.imageUrl} className="card__image" alt="" onerror="this.onerror=null;/error.jpg;" />
+            <img src={bookmark.imageUrl === "false" ? 'error.jpg' : bookmark.imageUrl} className="card__image" alt="" onError={handleImageError} />
             <div className="card__overlay">
               <div className="card__header">
                 <svg className="card__arc" xmlns="http://www.w3.org/2000/svg">
