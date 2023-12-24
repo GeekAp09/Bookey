@@ -18,7 +18,7 @@ const CardList = () => {
   }, []);
 
   const handleImageError = (event) => {
-    event.target.src = '/error.png'; // Replace failed image with error.png
+    event.target.src = '/error.jpg'; // Replace failed image with error.png
   };
 
   return (
