@@ -22,7 +22,7 @@ const CardList = () => {
       {bookmarks.map((bookmark, index) => (
         <li key={index}>
           <a href={bookmark.url} className="card">
-            <img src={bookmark.imageUrl === "false" ? 'error.png' : bookmark.imageUrl} className="card__image" alt="" onerror="this.src='error.png';" />
+            <img src={bookmark.imageUrl === "false" ? 'error.jpg' : bookmark.imageUrl} className="card__image" alt="" onerror="this.src='error.png';" />
             <div className="card__overlay">
               <div className="card__header">
                 <svg className="card__arc" xmlns="http://www.w3.org/2000/svg">
