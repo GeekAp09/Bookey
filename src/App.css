@@ -27,6 +27,7 @@ html {
   font-size: 62.5%; /* 1rem = 10px    100% = 16px */
   overflow-y: scroll;
   background: var(--greyLight-1);
+	width:fit-content;
 }
 
 @media screen and (min-width: 900px) {
